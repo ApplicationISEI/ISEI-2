@@ -1,0 +1,151 @@
+{
+  "Le diabète":{
+    "P":{ 
+      
+      "Préférer un endroit calme et sans danger immédiat":{
+          "O":{
+            "La personne est-elle CONSCIENTE?":{
+              
+              
+              "Oui":{
+                
+                "Présente-elle":{
+                  
+                  "Hypo":["Un changement de caractère","Des maux de tête","De la fatigue","Une pâleur",
+                  "Des tremblements","Une vue trouble","Des vertiges"
+                         ],
+                  "Hypo diagnostiquée":{
+                    "S":{
+                        "Faire assoir la personne":{
+                          "Re-sucrer la personne (au moins 3 sucres, une boisson sucrée, un biscuit)":{
+                            
+                            "A":{
+                              "Appels d'urgences":{
+                                "S":{
+                                  "Surveiller l’état de la victime durant un bon ¼ d’heure":{
+                                    
+                                  }
+                                  
+                                }
+                                
+                              }
+                              
+                            }
+                            
+                          }
+                          
+                        }
+                    
+                    } 
+                    
+                  },
+                  
+                  "Hyper":["De la fatigue","De la somnolence","Une langue sèche","Une grande soif","Un besoin d’aller au toilette souvent"
+                          ],
+                          
+                  "Hyper diagnostiquée":{
+                    "S":{
+                      "Si la personne a un stylo à insuline, l’aider à faire son injection ":{
+                        "A":{
+                          "Appels d'urgences":{
+                            "S":{
+                              "Surveiller  l’état de la victime durant un bon ¼ d’heure":{
+                                
+                              }
+                            }
+                            
+                          }
+                        }
+                      },
+                      
+                      "Si la personne n’a pas son stylo se rendre à l‘hôpital le plus proche":{
+                        "A":{
+                          "Appels d'urgences":{
+                            
+                            "S":{
+                              "Surveiller  l’état de la victime durant un bon ¼ d’heure":{
+                                
+                              }
+                              
+                            }
+                            
+                          }
+                        }
+                      }
+                        
+                      }
+                      
+                    }
+                  }
+                  
+                },
+            
+                
+              
+            
+            
+            "Non":{
+              
+              "S":{
+                
+                "Faire une injection de GLUCAGEN  et attendre 20 minutes":{
+                  "La victime s’est-elle RÉVEILLÉE?":{
+                    "Oui":{
+                      "il s’agissait d’une hypoglycémie":{
+                        "A":{
+                          "Appels d'urgences":{
+                            "S":{
+                              "Faire assoir la personne":{
+                          "Re-sucrer la personne si besoin(au moins 3 sucres, une boisson sucrée, un biscuit)":{
+                            "Surveiller  l’état de la victime durant un bon ¼ d’heure":{
+                              
+                            }
+                          }
+                        }
+                      }
+                      }
+                      }
+                      }
+                    },
+                    "Non":{
+                      "A":{
+                        "Appels d'urgences":{
+                          "S":{
+                            "Surveiller l’état de la victime surtout la respiration ":{
+                              
+                            }
+                          }
+                        }
+                      }
+                      
+                    }
+                  }
+                }
+                
+              }
+              
+            }
+              
+              
+           }
+              
+            
+            
+            
+            
+            
+            
+      
+              
+            
+            
+          }
+      
+    }
+
+      
+    }
+      
+}
+
+}

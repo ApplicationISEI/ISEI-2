@@ -273,7 +273,7 @@ function recupere() {
 	<form name="formulaire">
 		<b>Nom:</b> <input type="text" required name="lname" style="width:200px" placeholder="Introduisez votre nom">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 		<b>Prénom:</b> <input type="text" required name="fname" style="width:200px" placeholder="Introduisez votre prénom"><br><br>
-		<b>Date de naissance:</b> <input required pattern="\d{1,2}/\d{1,2}/\d{4}" type="text" style="width:100px" name ="birth" placeholder="jj/mm/aaaa"><br><br>
+		<b>Date de naissance:</b> <input type="text" required pattern="\d{1}" style="width:20px" name ="birth1" placeholder="jj"MAXLENGTH="2"> / <input type="text" required pattern="\d{2}" style="width:20px" name ="birth2" placeholder="mm"MAXLENGTH="2"> / <input type="text" required pattern="\d{3}" style="width:30px" name ="birth3" placeholder="aaaa"MAXLENGTH="4"><br><br>
                 <b>Sexe:</b> <br>
                 <input style="margin-left:5%" type="radio" name="sex" value="Homme" />Homme<br>
 		<input style="margin-left:5%" type="radio" name="sex" value="Femme" />Femme<br><br>

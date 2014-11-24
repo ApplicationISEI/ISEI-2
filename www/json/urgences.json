@@ -2,6 +2,20 @@
 
   "brulure": {
     "name": "Brûlures"
+    "sous-categories" : {
+      "chimiques":{
+        "name":"Chimiques"
+      },
+      "chimiques":{
+        "name":"Electriques"
+      },
+      "chimiques":{
+        "name":"Frottements"
+      },
+      "chimiques":{
+        "name":"Sources chaudes et flammes"
+      }
+    }
   },
 
   "les_manifestations_allergiques": {

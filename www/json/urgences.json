@@ -1,15 +1,47 @@
 {
 
   "brulure": {
-    "name": "Brûlure"
+    "name": "Brûlures"
   },
 
-  "lesmanifestationsallergiques": {
+  "les_manifestations_allergiques": {
     "name": "Les manifestations allergiques"
   },
 
-  "lesintoxications": {
+  "les_intoxications": {
     "name": "Les intoxications"
+  },
+  
+  "les_coupures":{
+    "name": "Les coupures"
+  },
+  "les_chutes":{
+    "name": "Les chutes"
+  },
+  "les_problemes_cardio_vasculaire_cerebraux":{
+    "name": "Les problèmes cardio-vasculaire-cérébraux"
+  },
+  "le_diabete":{
+    "name":"Le diabète"
+  },
+  "les_suffocations":{
+    "name": "Les suffocations"
+  },
+  "les_accidents_de_la_route":{
+    "name": "Les accidents de la route"
+  },
+  "les_problemes_sexuels":{
+    "name":"Les problèmes sexuels"
+  },
+  "les_morsures_et_piqures":{
+    "name":"Les morsures et piqûres"
+  },
+  "noyade":{
+    "name":"Noyade"
+  },
+  "bibliographie":{
+    "name":"Bibliographie"
   }
 
 }
+

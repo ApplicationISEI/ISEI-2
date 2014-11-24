@@ -12,9 +12,11 @@
 		  	console.log("here")
 			 //Load categories object JSON
 			$.getJSON("json/urgences.json", function(data){    
-				
+				var c = document.getElementById("categories");
 				for(prop in data){
-					console.log(prop)
+					c.innerHTML += '<a href="1.html" > <input type="button" value="' + data[prop].name+ '"></a><br>';
+					// debugger;
+					// $("#categories")		
 				}
 				
 			});
@@ -24,7 +26,9 @@
     </head>
     <body>
 		<h1> URGENCES </h1>
-		<a href="1.html" > <input type="button" value="Types de brûlures"></a><br>
+		<div id="categories">
+			<a href="1.html" > <input type="button" value="Types de brûlures"></a><br>
+		</div>
 		<a href="Page d'accueil.html" > <input type="button" value="Retour"></a>
 	</body>
 </html>

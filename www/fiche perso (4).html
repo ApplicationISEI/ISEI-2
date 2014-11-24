@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="background: url(fondfiche.jpg)">
+<html style="background: url(img/fichepersofd.png)">
 <head>
 <script language="JavaScript">
   <!--//
@@ -76,7 +76,7 @@ function myFunction() {
      nomok=true;}
 
      if(prenom==""){
-     alert("le prénom est vide");
+     alert("le prÃ©nom est vide");
      }  else {
      prenomok=true;}
 
@@ -86,7 +86,7 @@ function myFunction() {
            sexok = true;}
 
      if(!checkRegistry(registry)){
-     alert("numéro de registre non valide");
+     alert("numÃ©ro de registre non valide");
      }    else{
             validRegistry=true;}
 
@@ -104,20 +104,20 @@ function myFunction() {
       {
      var myWin = open("", "","width=600,height=900");
      myWin.document.write("Nom: " +  nom +"<br>");
-     myWin.document.write("Prénom: " +  prenom +"<br>");
+     myWin.document.write("PrÃ©nom: " +  prenom +"<br>");
      myWin.document.write("Date de naissance: " + anniv + "<br>");
      myWin.document.write("Sexe: " + radio(sexe) + "<br>" );
      myWin.document.write("Taille: " + taille[0] + "m" + taille[1] + "cm <br>");
      myWin.document.write("Poids: " + poids[0] + "kg" + poids[1] + "g <br>");
-     myWin.document.write("Nationalité: " + nation + "<br>");
-     myWin.document.write("Numéro de registre national: " + registry + "<br>");
+     myWin.document.write("NationalitÃ©: " + nation + "<br>");
+     myWin.document.write("NumÃ©ro de registre national: " + registry + "<br>");
      myWin.document.write("Groupe sanguin: " + boite1.value + "<br>" );
      myWin.document.write("Pathologies: " + patho[0] + "<br>" + patho[1] + "<br>" + patho[2] + "<br>" + patho[3] + "<br>" + patho[4] + "<br>");
      myWin.document.write("Chirurgies: " + chir[0] + "<br>" + chir[1] + "<br>" + chir[2] + "<br>" + chir[3] + "<br>" + chir[4] + "<br>");
      myWin.document.write("Allergies: " + allerg[0] + "<br>" + allerg[1] + "<br>" + allerg[2] + "<br>" + allerg[3] + "<br>" + allerg[4] + "<br>");
      myWin.document.write("Traitements suivis: " + treatment[0] + "<br>" + treatment[1] + "<br>" + treatment[2] + "<br>" + treatment[3] + "<br>" + treatment[4] + "<br>");
-     myWin.document.write("Médecin traitant: " + medtreat + "<br>");
-     myWin.document.write("Médecin spécialisés: " + medspe[0] + "<br>" + medspe[1] + "<br>" + medspe[2] + "<br>");
+     myWin.document.write("MÃ©decin traitant: " + medtreat + "<br>");
+     myWin.document.write("MÃ©decin spÃ©cialisÃ©s: " + medspe[0] + "<br>" + medspe[1] + "<br>" + medspe[2] + "<br>");
      myWin.document.write("Donneur d'organes: " + radio(donneur) + "<br>" );
 
        }
@@ -156,7 +156,7 @@ function enregistre() {
      nomok=true;}
 
      if(prenom==""){
-     alert("le prénom est vide");
+     alert("le prÃ©nom est vide");
      }  else {
      prenomok=true;}
 
@@ -166,7 +166,7 @@ function enregistre() {
            sexok = true;}
 
      if(!checkRegistry(registry)){
-     alert("numéro de registre non valide");
+     alert("numÃ©ro de registre non valide");
      }    else{
             validRegistry=true;}
 
@@ -192,7 +192,7 @@ function enregistre() {
     localStorage.setItem("taille", taille[0] + "m" + taille[1] + "cm" );
     localStorage.setItem("poids", poids[0] + "kg" + poids[1] + "g" );
     localStorage.setItem("nationalite", nation );
-    localStorage.setItem("numéroregistre", registry);
+    localStorage.setItem("numÃ©roregistre", registry);
     localStorage.setItem("sang", boite1.value);
     localStorage.setItem("patho1", patho[0]);
     localStorage.setItem("patho2", patho[1]);
@@ -229,13 +229,13 @@ function enregistre() {
 function recupere() {
      var myWin = open("", "","width=600,height=900");
      myWin.document.write("Nom: " +  localStorage.getItem("name") +"<br>");
-     myWin.document.write("Prénom: " +  localStorage.getItem("firstname") +"<br>");
+     myWin.document.write("PrÃ©nom: " +  localStorage.getItem("firstname") +"<br>");
      myWin.document.write("Date de naissance: " + localStorage.getItem("anniversaire") + "<br>");
      myWin.document.write("Sexe: " + localStorage.getItem("sexe") + "<br>" );
      myWin.document.write("Taille: " + localStorage.getItem("taille") + "<br>");
      myWin.document.write("Poids: " + localStorage.getItem("poids") + "<br>");
-     myWin.document.write("Nationalité: " + localStorage.getItem("nationalite") + "<br>");
-     myWin.document.write("Numéro de registre national: " + localStorage.getItem("numéroregistre") + "<br>");
+     myWin.document.write("NationalitÃ©: " + localStorage.getItem("nationalite") + "<br>");
+     myWin.document.write("NumÃ©ro de registre national: " + localStorage.getItem("numÃ©roregistre") + "<br>");
      myWin.document.write("Groupe sanguin: " + localStorage.getItem("sang") + "<br>" );
      myWin.document.write("Pathologies: " + localStorage.getItem("patho1") + "<br>");
      myWin.document.write(localStorage.getItem("patho2") + "<br>");
@@ -257,8 +257,8 @@ function recupere() {
      myWin.document.write(localStorage.getItem("treatment3") + "<br>");
      myWin.document.write(localStorage.getItem("treatment4") + "<br>");
      myWin.document.write(localStorage.getItem("treatment5") + "<br>");
-     myWin.document.write("Médecin traitant: " + localStorage.getItem("medecintraitant") + "<br>");
-     myWin.document.write("Médecin spécialisés: " + localStorage.getItem("medspe1") + "<br>");
+     myWin.document.write("MÃ©decin traitant: " + localStorage.getItem("medecintraitant") + "<br>");
+     myWin.document.write("MÃ©decin spÃ©cialisÃ©s: " + localStorage.getItem("medspe1") + "<br>");
      myWin.document.write(localStorage.getItem("medspe2") + "<br>");
      myWin.document.write(localStorage.getItem("medspe3") + "<br>");
      myWin.document.write("Donneur d'organes: " + localStorage.getItem("donneur") + "<br>" );
@@ -271,15 +271,15 @@ function recupere() {
 <body>
 	<form name="formulaire">
 		<b>Nom:</b> <input type="text" required name="lname" style="width:200px" placeholder="Introduisez votre nom">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		<b>Prénom:</b> <input type="text" required name="fname" style="width:200px" placeholder="Introduisez votre prénom"><br><br>
+		<b>PrÃ©nom:</b> <input type="text" required name="fname" style="width:200px" placeholder="Introduisez votre prÃ©nom"><br><br>
 		<b>Date de naissance:</b> <input required pattern="\d{1,2}/\d{1,2}/\d{4}" type="text" style="width:100px" name ="birth" placeholder="jj/mm/aaaa"><br><br>
                 <b>Sexe:</b> <br>
                 <input style="margin-left:5%" type="radio" name="sex" value="Homme" />Homme<br>
 		<input style="margin-left:5%" type="radio" name="sex" value="Femme" />Femme<br><br>
 		<b>Taille:</b> <input type="text" required pattern="\d{1}" style="width:20px" name="height1" placeholder="x"MAXLENGTH="1"> m <input type="text" required pattern="\d{2}"style="width:30px" name="height2" placeholder="xx"MAXLENGTH="2"><br><br>
 		<b>Poids:</b> <input type="text" required style="width:40px" name="weight1" placeholder="xxx"MAXLENGTH="3"> kg <input type="text" style="width:40px" name="weight2" placeholder="xxx"MAXLENGTH="3"><br><br>
-		<b>Nationalité: </b> <input type="text" required name ="nationality" placeholder="Nationalité"><br><br>
-		<b>Numéro d'identité:</b> <input type="text" name="ID" required pattern="\d{11}|\d{6} \d{3} \d{2}|\d{6}.\d{3}.\d{2}" placeholder="xxxxxx.xxx.xx"MAXLENGTH="13"><br><br>
+		<b>NationalitÃ©: </b> <input type="text" required name ="nationality" placeholder="NationalitÃ©"><br><br>
+		<b>NumÃ©ro d'identitÃ©:</b> <input type="text" name="ID" required pattern="\d{11}|\d{6} \d{3} \d{2}|\d{6}.\d{3}.\d{2}" placeholder="xxxxxx.xxx.xx"MAXLENGTH="13"><br><br>
                 <b>Groupe sanguin:</b> 	<select id="boite1" onChange="choix(this.form)">
 									<option value="N/A">Choisissez votre groupe sanguin</option>
 									<option value="A+"> A+</option>
@@ -293,11 +293,11 @@ function recupere() {
 								</select><br><br>
 
 		<b>Pathologies:</b><br> 
-                                             <input type="text" name="patho1" style="width:200px;margin-left:10%" placeholder="diabétique, problèmes cardiaques..."> <br>
-				             <input type="text" name="patho2" style="width:200px;margin-left:10%" placeholder="diabétique, problèmes cardiaques..."> <br>
-					     <input type="text" name="patho3" style="width:200px;margin-left:10%" placeholder="diabétique, problèmes cardiaques..."> <br>
-					     <input type="text" name="patho4" style="width:200px;margin-left:10%" placeholder="diabétique, problèmes cardiaques..."> <br>
-					     <input type="text" name="patho5" style="width:200px;margin-left:10%" placeholder="diabétique, problèmes cardiaques..."> <br><br>
+                                             <input type="text" name="patho1" style="width:200px;margin-left:10%" placeholder="diabÃ©tique, problÃ¨mes cardiaques..."> <br>
+				             <input type="text" name="patho2" style="width:200px;margin-left:10%" placeholder="diabÃ©tique, problÃ¨mes cardiaques..."> <br>
+					     <input type="text" name="patho3" style="width:200px;margin-left:10%" placeholder="diabÃ©tique, problÃ¨mes cardiaques..."> <br>
+					     <input type="text" name="patho4" style="width:200px;margin-left:10%" placeholder="diabÃ©tique, problÃ¨mes cardiaques..."> <br>
+					     <input type="text" name="patho5" style="width:200px;margin-left:10%" placeholder="diabÃ©tique, problÃ¨mes cardiaques..."> <br><br>
 		<b>Chirurgie:</b><br>
                                              <input type="text" name="chir1" style="width:200px;margin-left:10%" placeholder="pace maker, broches..."> <br>
 					     <input type="text" name="chir2" style="width:200px;margin-left:10%" placeholder="pace maker, broches..."> <br>
@@ -305,11 +305,11 @@ function recupere() {
 					     <input type="text" name="chir4" style="width:200px;margin-left:10%" placeholder="pace maker, broches..."> <br>
 					     <input type="text" name="chir5" style="width:200px;margin-left:10%" placeholder="pace maker, broches..."> <br><br>
 		<b>Allergies:</b><br>
-                                             <input type="text" name="allerg1" style="width:200px;margin-left:10%" placeholder="allergie connue (à un médicament)"> <br>
-					     <input type="text" name="allerg2" style="width:200px;margin-left:10%" placeholder="allergie connue (à un médicament)"> <br>
-					     <input type="text" name="allerg3" style="width:200px;margin-left:10%" placeholder="allergie connue (à un médicament)"> <br>
-					     <input type="text" name="allerg4" style="width:200px;margin-left:10%" placeholder="allergie connue (à un médicament)"> <br>
-					     <input type="text" name="allerg5" style="width:200px;margin-left:10%" placeholder="allergie connue (à un médicament)"> <br><br>
+                                             <input type="text" name="allerg1" style="width:200px;margin-left:10%" placeholder="allergie connue (Ã  un mÃ©dicament)"> <br>
+					     <input type="text" name="allerg2" style="width:200px;margin-left:10%" placeholder="allergie connue (Ã  un mÃ©dicament)"> <br>
+					     <input type="text" name="allerg3" style="width:200px;margin-left:10%" placeholder="allergie connue (Ã  un mÃ©dicament)"> <br>
+					     <input type="text" name="allerg4" style="width:200px;margin-left:10%" placeholder="allergie connue (Ã  un mÃ©dicament)"> <br>
+					     <input type="text" name="allerg5" style="width:200px;margin-left:10%" placeholder="allergie connue (Ã  un mÃ©dicament)"> <br><br>
 		<b>Traitements suivis:</b><br>
                                              <input type="text" name="treatment1" style="width:200px;margin-left:10%" placeholder="traitement actuel"> <br>
 					     <input type="text" name="treatment2" style="width:200px;margin-left:10%" placeholder="traitement actuel"> <br>
@@ -317,12 +317,12 @@ function recupere() {
 					     <input type="text" name="treatment4" style="width:200px;margin-left:10%" placeholder="traitement actuel"> <br>
 					     <input type="text" name="treatment5" style="width:200px;margin-left:10%" placeholder="traitement actuel"> <br><br>
 
-		<b>Médecin traitant:</b>   <input type="text" name="doctor" style="width:200px" placeholder="médecin principal"> <br><br>
+		<b>MÃ©decin traitant:</b>   <input type="text" name="doctor" style="width:200px" placeholder="mÃ©decin principal"> <br><br>
 
-		<b>Médecins spécialisés:</b><br>
-                                               <input type="text" name="spe1" style="width:200px;margin-left:10%" placeholder="médecin spécialiste + spécialité"> <br>
-                                               <input type="text" name="spe2" style="width:200px;margin-left:10%" placeholder="médecin spécialiste + spécialité"> <br>
-                                               <input type="text" name="spe3" style="width:200px;margin-left:10%" placeholder="médecin spécialiste + spécialité"> <br><br>
+		<b>MÃ©decins spÃ©cialisÃ©s:</b><br>
+                                               <input type="text" name="spe1" style="width:200px;margin-left:10%" placeholder="mÃ©decin spÃ©cialiste + spÃ©cialitÃ©"> <br>
+                                               <input type="text" name="spe2" style="width:200px;margin-left:10%" placeholder="mÃ©decin spÃ©cialiste + spÃ©cialitÃ©"> <br>
+                                               <input type="text" name="spe3" style="width:200px;margin-left:10%" placeholder="mÃ©decin spÃ©cialiste + spÃ©cialitÃ©"> <br><br>
 		<b>Donneur d'organes:</b><br>
                                              <input style="margin-left:5%"type="radio" name="org_donn" value="Oui">Oui<br>
                                              <input style="margin-left:5%"type="radio" name="org_donn" value="Non">Non<br>
@@ -333,7 +333,7 @@ function recupere() {
 
 
 
-<p>Cliquez sur "Recup" pour récupérer vos données.</p>
+<p>Cliquez sur "Recup" pour rÃ©cupÃ©rer vos donnÃ©es.</p>
 
 <input type=BUTTON value="recup" name="mySubmit" onClick="myFunction()">
  </form>

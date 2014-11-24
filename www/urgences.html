@@ -9,15 +9,16 @@
 		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<script type="text/javascript">
 		  window.onload = function() {
-			$(document).ready(function () {
-				 //Load categories object JSON
-				jQuery.getJSON("json/urgences.json", function(data){         
-
-					for(prop in data) {
-						console.log(prop)
-							}
-				});
+		  	console.log("here")
+			 //Load categories object JSON
+			$.getJSON("json/urgences.json", function(data){    
+				
+				for(prop in data){
+					console.log(prop)
+				}
+				
 			});
+		
 		}
 		</script>
     </head>

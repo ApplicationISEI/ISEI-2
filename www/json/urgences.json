@@ -1,15 +1,15 @@
 {
-  "Urgences": {
-    "brulure":{
-      name:"Brûlure"
-    },
-   
-    "lesmanifestationsallergiques": {
-      name:"Les manifestations allergiques"
-    },
-    
-    "lesintoxications":{
-      name:"Les intoxications"
-    },
-    
+
+  "brulure": {
+    "name": "Brûlure"
+  },
+
+  "lesmanifestationsallergiques": {
+    "name": "Les manifestations allergiques"
+  },
+
+  "lesintoxications": {
+    "name": "Les intoxications"
+  }
+
 }

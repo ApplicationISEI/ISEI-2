@@ -3,22 +3,23 @@
     <head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" /> 
 	    <title>Premiers secours</title>
-		<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		
 		<script type="text/javascript">
 		  window.onload = function() {
-		  	console.log("here")
 			 //Load categories object JSON
 			$.getJSON("json/urgences.json", function(data){    
 				var c = document.getElementById("categories");
 				for(prop in data){
-					c.innerHTML += '<a href="1.html" > <input type="button" value="' + data[prop].name+ '"></a><br>';
+					c.innerHTML += '<a data-role="button" href="#'+ prop +'">'+ data[prop].name+ '</a><br>';
 					// debugger;
 					// $("#categories")		
 				}
-				
+				$("#categories").trigger("create")
 			});
 		
 		}
@@ -27,7 +28,6 @@
     <body>
 		<h1> URGENCES </h1>
 		<div id="categories">
-			<a href="1.html" > <input type="button" value="Types de brûlures"></a><br>
 		</div>
 		<a href="Page d'accueil.html" > <input type="button" value="Retour"></a>
 	</body>

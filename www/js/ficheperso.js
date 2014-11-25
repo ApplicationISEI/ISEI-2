@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html style="background: url(img/fichepersofd.png)">
-<head>
-<link rel="stylesheet" type="text/css" media="screen" href="ficheperso.css" />
-<script language="JavaScript">
-  <!--//
-
-  function radio(radiobutton)
+function radio(radiobutton)
 {
      for (var i=0; i<radiobutton.length; i++) {
        if (radiobutton[i].checked)
@@ -265,82 +258,5 @@ function recupere() {
      myWin.document.write("Donneur d'organes: " + localStorage.getItem("donneur") + "<br>" );
 
     }
-
-//-->
-</script>
-</head>
-<body>
-	<form name="formulaire">
-		<b>Nom:</b> <input type="text" required name="lname" style="width:200px" placeholder="Introduisez votre nom">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		<b>Prénom:</b> <input type="text" required name="fname" style="width:200px" placeholder="Introduisez votre prénom"><br><br>
-		<b>Date de naissance:</b> <input type="text" required pattern="\d{1}" style="width:20px" name ="birth1" placeholder="jj"MAXLENGTH="2"> / <input type="text" required pattern="\d{2}" style="width:20px" name ="birth2" placeholder="mm"MAXLENGTH="2"> / <input type="text" required pattern="\d{3}" style="width:30px" name ="birth3" placeholder="aaaa"MAXLENGTH="4"><br><br>
-                <b>Sexe:</b> <br>
-                <input style="margin-left:5%" type="radio" name="sex" value="Homme" />Homme<br>
-		<input style="margin-left:5%" type="radio" name="sex" value="Femme" />Femme<br><br>
-		<b>Taille:</b> <input type="text" required pattern="\d{1}" style="width:20px" name="height1" placeholder="x"MAXLENGTH="1"> m <input type="text" required pattern="\d{2}"style="width:30px" name="height2" placeholder="xx"MAXLENGTH="2"><br><br>
-		<b>Poids:</b> <input type="text" required style="width:40px" name="weight1" placeholder="xxx"MAXLENGTH="3"> kg <input type="text" style="width:40px" name="weight2" placeholder="xxx"MAXLENGTH="3"><br><br>
-		<b>Nationalité: </b> <input type="text" required name ="nationality" placeholder="Nationalité"><br><br>
-		<b>Numéro d'identité:</b> <input type="text" name="ID" required pattern="\d{11}|\d{6} \d{3} \d{2}|\d{6}.\d{3}.\d{2}" placeholder="xxxxxx.xxx.xx"MAXLENGTH="13"><br><br>
-                <b>Groupe sanguin:</b> 	<select id="boite1" onChange="choix(this.form)">
-									<option value="N/A">Choisissez votre groupe sanguin</option>
-									<option value="A+"> A+</option>
-									<option value="A-"> A-</option>
-									<option value="B+"> B+</option>
-									<option value="B-"> B-</option>
-									<option value="AB+"> AB+</option>
-									<option value="AB-"> AB-</option>
-									<option value="O+"> O+</option>
-									<option value="O-"> O-</option>
-								</select><br><br>
-
-		<b>Pathologies:</b><br> 
-                                             <input type="text" name="patho1" style="width:200px;margin-left:10%" placeholder="diabétique, problèmes cardiaques..."> <br>
-				             <input type="text" name="patho2" style="width:200px;margin-left:10%" placeholder="diabétique, problèmes cardiaques..."> <br>
-					     <input type="text" name="patho3" style="width:200px;margin-left:10%" placeholder="diabétique, problèmes cardiaques..."> <br>
-					     <input type="text" name="patho4" style="width:200px;margin-left:10%" placeholder="diabétique, problèmes cardiaques..."> <br>
-					     <input type="text" name="patho5" style="width:200px;margin-left:10%" placeholder="diabétique, problèmes cardiaques..."> <br><br>
-		<b>Chirurgie:</b><br>
-                                             <input type="text" name="chir1" style="width:200px;margin-left:10%" placeholder="pace maker, broches..."> <br>
-					     <input type="text" name="chir2" style="width:200px;margin-left:10%" placeholder="pace maker, broches..."> <br>
-					     <input type="text" name="chir3" style="width:200px;margin-left:10%" placeholder="pace maker, broches..."> <br>
-					     <input type="text" name="chir4" style="width:200px;margin-left:10%" placeholder="pace maker, broches..."> <br>
-					     <input type="text" name="chir5" style="width:200px;margin-left:10%" placeholder="pace maker, broches..."> <br><br>
-		<b>Allergies:</b><br>
-                                             <input type="text" name="allerg1" style="width:200px;margin-left:10%" placeholder="allergie connue (à un médicament)"> <br>
-					     <input type="text" name="allerg2" style="width:200px;margin-left:10%" placeholder="allergie connue (à un médicament)"> <br>
-					     <input type="text" name="allerg3" style="width:200px;margin-left:10%" placeholder="allergie connue (à un médicament)"> <br>
-					     <input type="text" name="allerg4" style="width:200px;margin-left:10%" placeholder="allergie connue (à un médicament)"> <br>
-					     <input type="text" name="allerg5" style="width:200px;margin-left:10%" placeholder="allergie connue (à un médicament)"> <br><br>
-		<b>Traitements suivis:</b><br>
-                                             <input type="text" name="treatment1" style="width:200px;margin-left:10%" placeholder="traitement actuel"> <br>
-					     <input type="text" name="treatment2" style="width:200px;margin-left:10%" placeholder="traitement actuel"> <br>
-					     <input type="text" name="treatment3" style="width:200px;margin-left:10%" placeholder="traitement actuel"> <br>
-					     <input type="text" name="treatment4" style="width:200px;margin-left:10%" placeholder="traitement actuel"> <br>
-					     <input type="text" name="treatment5" style="width:200px;margin-left:10%" placeholder="traitement actuel"> <br><br>
-
-		<b>Médecin traitant:</b>   <input type="text" name="doctor" style="width:200px" placeholder="médecin principal"> <br><br>
-
-		<b>Médecins spécialisés:</b><br>
-                                               <input type="text" name="spe1" style="width:200px;margin-left:10%" placeholder="médecin spécialiste + spécialité"> <br>
-                                               <input type="text" name="spe2" style="width:200px;margin-left:10%" placeholder="médecin spécialiste + spécialité"> <br>
-                                               <input type="text" name="spe3" style="width:200px;margin-left:10%" placeholder="médecin spécialiste + spécialité"> <br><br>
-		<b>Donneur d'organes:</b><br>
-                                             <input style="margin-left:5%"type="radio" name="org_donn" value="Oui">Oui<br>
-                                             <input style="margin-left:5%"type="radio" name="org_donn" value="Non">Non<br>
-	 	<br><br><br><br><br>
-            <input type=BUTTON value="Soumettre" name="envoyer" onClick="enregistre()">
-	<input type=BUTTON value="recuperer" name="recuperer" onClick="recupere()">
-                <INPUT type="reset" value="Reset">
-
-
-
-<p>Cliquez sur "Recup" pour récupérer vos données.</p>
-
-<input type=BUTTON value="recup" name="mySubmit" onClick="myFunction()">
- </form>
-<p id="recup"></p>
-
-
-		<a href="Page d'accueil.html" > <input type="button" value="Retour"> </a>
-</body>
-</html>
+function efface(){localStorage.clear();
+	}	

@@ -1,4 +1,4 @@
-function radio(radiobutton)
+ function radio(radiobutton)
 {
      for (var i=0; i<radiobutton.length; i++) {
        if (radiobutton[i].checked)

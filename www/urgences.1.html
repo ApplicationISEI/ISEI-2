@@ -13,32 +13,29 @@
 
 	<script type="text/javascript">
 		var g_data;
-		function click_cat(init) {
-			// set cats to display
-			var cats;
-			if (init == "init") {
-				cats = g_data;
+		function click_cat(categorie) {
+			// si ce n'est pas l'initialisation, on redéfini le référenciel
+			if(categorie != "init")
+			{
+					g_data = g_data[categorie];
 			}
-			else {
-				var source = event.srcElement || event.target;
-				source = source.innerHTML;
-				cats = g_data[source];
+			else 
+			{
+				set_g_data();
 			}
+			var cats=g_data;
 			
 			// display cats
 			$("#categories").text("");
 			var c = document.getElementById("categories");
 			for (prop in cats) {
-				c.innerHTML += '<a onclick="click_cat()" data-role="button">' + prop + '</a><br>';
+				c.innerHTML += '<a onclick="click_cat(\''+prop+'\')" data-role="button">' + prop + '</a><br>';
 			}
 			$("#categories").trigger("create")
 		};
-		//window.onload = function() {
-		$(document).ready(function() {
-			function set_g_data() {
-				// $.getJSON("json/urgences2.json", function(data) {
-				// 	g_data = data;
-				// });
+		
+		function set_g_data() {
+				
 				$.ajax({
 					url: "json/urgences2.json",
 					async: false,
@@ -46,8 +43,11 @@
 					success: function(data) {
 						g_data = data;
 					}
-				});
-			};
+				});	
+		};
+		
+		//window.onload = function() {
+		$(document).ready(function() {
 			set_g_data();
 			click_cat("init");
 		});

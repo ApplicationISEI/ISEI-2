@@ -1,67 +1,70 @@
 {
 
     "Brûlures": {
-        "Chimiques": {},
-        "Electriques": {},
-        "Sources chaudes et flammes": {},
-        "Frottements": {}
+        "Chimique": {},
+        "Electrique": {},
+        "Source chaude": {},
+        "Coup de soleil": {},
+        "Engelure": {},
+        "Brûlure à l'oeil": {}
     },
-    "Les manifestations allergiques": {
-        "Les chocs anaphylactiques": {},
-        "Prurit et dermatite": {},
-        "Bronchospasme": {}
+    "Noyade": {
     },
-    "Les intoxications": {
+    "Morsure / Piqûre": {
+        "Animaux": {},
+        "Serpent": {},
+        "Abeille / Guêpe": {},
+        "Tique": {},
+        "Araignée": {},
+        "Méduse": {}
+    },
+     "Diabète": {
+    },
+    "Intoxications": {
         "Alimentaire": {},
-        "Médicamenteuse": {},
-        "Aux stupéfiants": {}
+        "Alcoolique": {},
+        "Drogue / Médicament": {},
+        "Produit chimique": {}
     },
     "Les coupures": {
-        "Gradation": {
-            "Superficie": {},
-            "Semi-profondes": {},
-            "Profondes": {}
+    },
+    "Problèmes sexuels": {
+        "Masculin": {
+            "Priapisme": {},
+            "Rupture du frein": {},
+            "Syndrome du pénis captif": {},
+            "Problème avec le contraceptif": {}
         },
-        "Les types": {
-            "Nettes": {},
-            "Arrachages": {},
-            "Nécrosées": {},
-            "Autres": {}
+        "Féminin": {
+            "Problème avec le contraceptif": {}
         }
     },
-    "Les chutes": {
-        "Fractures": {},
-        "Hématomes": {},
-        "Traumatismes": {}
-    },
-    "Les problèmes cardio-vasculaire-cérébraux": {
-        "Malaises cardiaques": {},
-        "Problèmes cardiaques": {},
-        "Problèmes neurologiques": {}
-    },
-    "Le diabète": {
-        "Hypoglycémie": {},
-        "Hyperglycémie": {}
-    },
-    "Les suffocations": {
+     "Problèmes respiratoires": {
         "Environnement": {},
         "Obstruction des voies respiratoires": {}
     },
-    "Les accidents de la route": {},
-    "Les problèmes sexuels": {
-        "Priapisme": {},
-        "Rupture frein": {},
-        "Pénis captif": {},
-        "Problème préservatif": {}
+    "Chutes": {
+        "Fracture": {},
+        "Saignement": {},
+        "Bleu": {},
+        "Inconscience": {}
     },
-    "Les morsures et piqûres": {
-        "Les chiens, chats et co.": {},
-        "Les serpents": {},
-        "Les abeilles et guêpes": {},
-        "Les tiques": {},
-        "Les araignées": {},
-        "Les méduses": {}
+    "Malaise": {
     },
-    "Noyade": {}
-
+    "Palpitations": {
+        "Problème cardiaque": {
+            "Douleur dans la poitrine": {},
+            "Infarctus": {},
+            "Accident vasculaire cérébral": {},
+            "Arrêt cardio-respiratoire": {}
+        },
+         "Problème neurologique": {
+            "Crise d'épilepsie": {},
+            "Convultions": {}
+        }
+    },
+     "Accident de la route": {
+    },
+     "Allergie": {
+    }
 }

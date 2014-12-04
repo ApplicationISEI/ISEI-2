@@ -1,7 +1,12 @@
 {
 
     "Brûlures": {
-        "Chimique": {},
+        "Chimique": {
+            "Protection": {"Protect":"tu dois faire ca","Observation":{
+             "Observ":"on observe ça", "Sécurité":{ "secur":"on securise le site blablablablabla", "Action":{ "act":"il faut faire ça blablabla", "Soin":{"S":"il faut soigner comme ça"   } 
+                }}}
+            }
+        },
         "Electrique": {},
         "Source chaude": {},
         "Coup de soleil": {},

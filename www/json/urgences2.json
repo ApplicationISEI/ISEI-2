@@ -2,8 +2,8 @@
 
     "Brûlures": {
         "Chimique": {
-            "Protection": {"Protect":"tu dois faire ca","Observation":{
-             "Observ":"on observe ça", "Sécurité":{ "secur":"on securise le site blablablablabla", "Action":{ "act":"il faut faire ça blablabla", "Soin":{"S":"il faut soigner comme ça"   } 
+            "Protection": {"Protect":"A","Observation":{
+             "Observ":"B", "Sécurité":{ "secur":"C", "Action":{ "act":"D", "Soin":{"S":"E"   } 
                 }}}
             }
         },

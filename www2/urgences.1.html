@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>Premiers secours</title>
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<script type="text/javascript">
+		var g_data;
+		var donnees;
+		function click_cat(categorie) {
+			// si ce n'est pas l'initialisation, on redéfini le référenciel
+			if(categorie != "init")
+			{
+					g_data = g_data[categorie];
+			}
+			else 
+			{
+				set_g_data();
+			}
+			var cats=g_data;
+			
+			// display cats
+			$("#categories").text("");
+			var c = document.getElementById("categories");
+		
+
+		for (var prop in cats) {
+			
+			if (prop == "Protection" || prop=="Observation" || prop =="Sécurité" || prop=="Action" || prop =="Soin"){
+				c.innerHTML += prop + '</a><br>';
+			
+				switch (prop) {
+        	
+        			case "Protection":
+           				donnees = '<h1>' +  g_data.Protection.Protect + '</h1>';
+			            break;
+			        case "Observation":
+			            donnees = g_data.Observation.Observ;
+			            break;
+			        case "Sécurité":
+			            donnees = g_data.Sécurité.secur;
+			            break;
+			        case "Action":
+			            donnees = g_data.Action.act;
+			            break;
+			        case "Soin":
+			            donnees = g_data.Soin.S;
+			            break;
+    				}
+    				debugger;
+    				
+				c.innerHTML += donnees + '</a><br>';
+				c.innerHTML += '<a onclick="click_cat(\''+prop+'\')" data-inline="true" data-role="button" data-mini="true">suivant</a><br>';
+			}
+			
+			else
+			{
+				c.innerHTML += '<a onclick="click_cat(\''+prop+'\')" data-role="button"  data-theme="a">' + prop + '</a><br>';
+				
+			}
+			$("#categories").trigger("create");
+		}
+		};
+		
+		function set_g_data() {
+				
+				$.ajax({
+					url: "json/urgences2.json",
+					async: false,
+					dataType: 'json',
+					success: function(data) {
+						g_data = data;
+						
+					}
+				});	
+		};
+		
+		//window.onload = function() {
+		$(document).ready(function() {
+		//	set_g_data();
+			click_cat("init");
+		});
+	</script>
+</head>
+
+<body>
+	<h1> URGENCES </h1>
+	<div id="categories">
+	</div>
+	<a href="index.html">
+		<a onclick='click_cat("init")' data-role="button">Retour</a>
+
+	</a>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+{
+    "Problème cardiaque": {
+            "Douleur dans la poitrine": {},
+            "Infarctus": {},
+            "Accident vasculaire cérébral": {},
+            "Arrêt cardio-respiratoire": {}
+        },
+         "Problème neurologique": {
+            "Crise d'épilepsie": {},
+            "Convultions": {}
+        }
+}

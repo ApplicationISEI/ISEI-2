@@ -189,6 +189,14 @@ label.ui-btn {
 }
 /* Corner rounding
 -----------------------------------------------------------------------------------------------------------*/
+.ui-icon-home {
+	background: url("images/icons-png/home-black.png") no-repeat;
+	    background-color: rgba(0, 0, 0, 0);
+        background-position: 0% 50%;
+        
+}
+/* Corner rounding
+-----------------------------------------------------------------------------------------------------------*/
 /* Class ui-btn-corner-all deprecated in 1.4 */
 .ui-corner-all {
 	-webkit-border-radius: .6em /*{global-radii-blocks}*/;

@@ -244,18 +244,18 @@ label.ui-btn {
 }
 /* Icons
 -----------------------------------------------------------------------------------------------------------*/
-.ui-btn-icon-left:after,
+/*.ui-btn-icon-left:after,
 .ui-btn-icon-right:after,
 .ui-btn-icon-top:after,
 .ui-btn-icon-bottom:after,
 .ui-btn-icon-notext:after {
-	background-color: #000000 /*{global-icon-color}*/;
-	background-color: rgba(0,0,0,0.15) /*{global-icon-disc}*/;
-	background-position: center center;
+	background-color: #000000*/ /*{global-icon-color}*/;
+	/*background-color: rgba(0,0,0,0.15)*/ /*{global-icon-disc}*/;
+/*	background-position: center center;
 	background-repeat: no-repeat;
 	-webkit-border-radius: 1em;
 	border-radius: 1em;
-}
+}*/
 /* Alt icons */
 .ui-alt-icon.ui-btn:after,
 .ui-alt-icon .ui-btn:after,

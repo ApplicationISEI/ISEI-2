@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>Premiers secours</title>
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<script type="text/javascript">
+		var g_data;
+		var donnees;
+		function click_cat(categorie) {
+			// si ce n'est pas l'initialisation, on redefini le referenciel
+			if(categorie != "init")
+			{
+					g_data = g_data[categorie];
+			}
+			else 
+			{
+				set_g_data();
+			}
+			
+			var cats=g_data;			
+			
+			$("#categories").text("");
+			var c = document.getElementById("categories");			
+			
+			if (typeof g_data === 'string') //Si on est au text final
+			{
+				c.innerHTML += g_data + '<br>';
+			}
+			else // display cats
+			{
+				for (var prop in cats) {
+					c.innerHTML += '<a onclick="click_cat(\''+prop+'\')" data-role="button" data-theme="a">' + prop + '</a><br>';
+					$("#categories").trigger("create");
+				}
+			}
+		};
+		
+		function set_g_data() {				
+				$.ajax({
+					url: "json/squelettetest.json",
+					async: false,
+					dataType: 'json',
+					success: function(data) {
+						g_data = data;						
+					},
+					error: function(error, texterror, other){
+					}
+				});	
+		};
+		
+		$(document).ready(function() {
+			set_g_data();
+			click_cat("init");
+		});
+	</script>
+</head>
+
+<body>
+	<h1> URGENCES </h1>
+	<div id="categories">
+	</div>
+	<a href="index.html">
+		<a onclick='click_cat("init")' data-role="button">Retour</a>
+
+	</a>
+</body>
+
+</html>

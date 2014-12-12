@@ -1,0 +1,69 @@
+{
+    "Brûlures": {
+        "Chimique": {
+             "Protection": "tu dois faire ca",
+			 "Observation":"on observe ça", 
+			 "Sécurité":"on securise le site blablablablabla",
+			 "Action":"il faut faire ça blablabla",
+			 "Soin":"il faut soigner comme ça"
+            },
+        "Electrique": {},
+        "Source chaude": {},
+        "Coup de soleil": {},
+        "Engelure": {},
+        "Brûlure à l'oeil": {}
+    },
+    "Noyade": {},
+    "Morsure / Piqûre": {
+        "Animaux": {},
+        "Serpent": {},
+        "Abeille / Guêpe": {},
+        "Tique": {},
+        "Araignée": {},
+        "Méduse": {}
+    },
+     "Diabète": {},
+    "Intoxications": {
+        "Alimentaire": {},
+        "Alcoolique": {},
+        "Drogue / Médicament": {},
+        "Produit chimique": {}
+    },
+    "Les coupures": {},
+    "Problèmes sexuels": {
+        "Masculin": {
+            "Priapisme": {},
+            "Rupture du frein": {},
+            "Syndrome du pénis captif": {},
+            "Problème avec le contraceptif": {}
+        },
+        "Féminin": {
+            "Problème avec le contraceptif": {}
+        }
+    },
+     "Problèmes respiratoires": {
+        "Environnement": {},
+        "Obstruction des voies respiratoires": {}
+    },
+    "Chutes": {
+        "Fracture": {},
+        "Saignement": {},
+        "Bleu": {},
+        "Inconscience": {}
+    },
+    "Malaise": {},
+    "Palpitations": {
+        "Problème cardiaque": {
+            "Douleur dans la poitrine": {},
+            "Infarctus": {},
+            "Accident vasculaire cérébral": {},
+            "Arrêt cardio-respiratoire": {}
+        },
+         "Problème neurologique": {
+            "Crise d'épilepsie": {},
+            "Convultions": {}
+        }
+    },
+     "Accident de la route": {},
+     "Allergie": {}
+}
